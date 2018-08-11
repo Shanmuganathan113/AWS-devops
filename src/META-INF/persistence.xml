@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="comp_dev">
+		<provider>oracle.toplink.essentials.PersistenceProvider</provider>
+			<properties>
+			<property name="toplink.logging.level" value="INFO" />
+			<property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			 <!--
+			<property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/competoi_prod?useUnicode=yes&amp;characterEncoding=UTF-8" />
+			<property name="toplink.jdbc.user" value="competoi_app" />
+			<property name="toplink.jdbc.password" value="Competoid_APP@1234$" />
+			-->
+			 
+			<!--  AWS prod 	
+			<property name="toplink.jdbc.url" value="jdbc:mysql://db.competoid.com/competoid_prod?useUnicode=yes&amp;characterEncoding=UTF-8" />
+			<property name="toplink.jdbc.user" value="competoid_app" />
+			<property name="toplink.jdbc.password" value="Competoid_12345" />
+			 	-->	
+			<!--  UAT  -->
+			<property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/competoi_prod?useUnicode=yes&amp;characterEncoding=UTF-8" />
+			<property name="toplink.jdbc.user" value="root" />
+			<property name="toplink.jdbc.password" value="root"/> 
+			
+			 		 
+			</properties>
+	</persistence-unit>
+	
+</persistence>
